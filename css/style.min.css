@@ -2,6 +2,18 @@
 .mb-4{
     font-size: 128px;
 }
-.navbar {
-    background-color: #045184;
-}                                                                                                                                                                         
+.nav-item{
+    margin-top: 5%;
+    color: #;
+}
+.navbar-nav{
+    margin-left: 12%;
+    float: center;
+}
+.black-text{
+    font-weight: bold;
+    color: black;
+}
+.logoImg{
+    width: 30%;
+}                                                                                                                                                   
