@@ -1,0 +1,235 @@
+﻿
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<!--sets the width of the page to follow the screen-width of the device (which will vary depending on the device), part sets the initial zoom level when the page is first loaded by the browser. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="WWFlogo.png">
+
+    <title>Materials Selection</title>
+
+	<LINK rel=StyleSheet href="StyleSheet1.css" type="text/css"> 
+
+</head>
+
+
+<body>
+
+
+<header class="header-search">
+
+	<div class="header-limiter">
+
+	<img class="logoImg" src="logo.png" />
+
+
+        <nav>
+            <a href="regionselect.html">Change Region</a>
+            <a href="HTMLPage1.html" class="selected">Materials Input</a>
+            <a href="HTMLPage2.html">Materials Output</a>
+            <a href="helppage.html">Help</a>
+        </nav>
+
+
+		<form id="searchthis" action="/search" style="display:inline;" method="get">
+		<input id="namanyay-search-box" name="q" size="40" type="text" placeholder="Search for materials..."/>
+		<input id="namanyay-search-btn" value="Go" type="submit"/>
+		</form>
+
+
+
+	</div>
+
+</header>
+
+
+
+<h1>Resource Optimization Input</h1>
+
+<div class="InputOverall"> 
+
+<div class="InputTabs">
+
+<button class="tablink lefttab" onclick="openTab('AvailableMat', this)" id="defaultOpen">Available Materials</button>
+<button class="tablink" onclick="openTab('Location', this)">Location</button>
+<button class="tablink" onclick="openTab('Budget', this)">Budget</button>
+<button class="tablink righttab" class="righttab" onclick="openTab('AdditionalInfo', this)">Additional Input</button> 
+
+<div id="AvailableMat" class="tabcontent">
+  <h3 style="margin-top: 30px;">Enter available materials here:</h3>
+  <p>This includes materials you own, materials you have access to, and materials you are able to purchase. Only fields marked with an * are required, but the more information you provide, the more accurate your results will be.
+
+  <div class="MatInputRow" id="MatInputRow1">
+    <div class="smallcontainer addcontainer" onclick="displayNextRow('MatInputRow2', 'addbutton1', 'addspan1', 'Mat1')" value='AddMat'>
+	<a class="button smallbutton addbutton" id="addbutton1"><span style="width: 35px; font-size: 18px">+</span><p class="addspan" id="addspan1">Add</p></a>
+	</div>
+  Material*: <input type="text" name="Material" value="" id="Mat1" class="materialInput">
+  Amount: <input type="text" name="Amount" value="" id="Amount1" class="materialInput numInput"> 
+  Cost: <input type="text" name="Cost" value="" id="Cost1" class="materialInput numInput">
+  Distance: <input type="text" name="Distance" value="" id="Dist1" class="materialInput numInput distanceInput">
+  </div>
+
+    <div class="MatInputRow" id="MatInputRow2" style="display: none;">
+    <div class="smallcontainer addcontainer" onclick="displayNextRow('MatInputRow3', 'addbutton2', 'addspan2', 'Mat2')" value='AddMat'>
+	<a class="button smallbutton addbutton" id="addbutton2"><span style="width: 35px; font-size: 18px">+</span><p class="addspan" id="addspan2">Add</p></a>
+	</div>
+  Material*: <input type="text" name="Material" value="" id="Mat2" class="materialInput">
+  Amount: <input type="text" name="Amount" value="" id="Amount2" class="materialInput numInput"> 
+  Cost: <input type="text" name="Cost" value="" id="Cost2" class="materialInput numInput">
+  Distance: <input type="text" name="Distance" value="" id="Dist2" class="materialInput numInput distanceInput">
+  </div>
+
+    <div class="MatInputRow" id="MatInputRow3" style="display: none;">
+    <div class="smallcontainer addcontainer" onclick="displayNextRow('MatInputRow4', 'addbutton3', 'addspan3', 'Mat3')" value='AddMat'>
+	<a class="button smallbutton addbutton" id="addbutton3"><span style="width: 35px; font-size: 18px">+</span><p class="addspan" id="addspan3">Add</p></a>
+	</div>
+  Material*: <input type="text" name="Material" value="" id="Mat3" class="materialInput">
+  Amount: <input type="text" name="Amount" value="" id="Amount3" class="materialInput numInput"> 
+  Cost: <input type="text" name="Cost" value="" id="Cost3" class="materialInput numInput">
+  Distance: <input type="text" name="Distance" value="" id="Dist3" class="materialInput numInput distanceInput">
+  </div>
+
+    <div class="MatInputRow" id="MatInputRow4" style="display: none;">
+    <div class="smallcontainer addcontainer" onclick="displayNextRow('MatInputRow5', 'addbutton4', 'addspan4', 'Mat4')" value='AddMat'>
+	<a class="button smallbutton addbutton" id="addbutton4"><span style="width: 35px; font-size: 18px">+</span><p class="addspan" id="addspan4">Add</p></a>
+	</div>
+  Material*: <input type="text" name="Material" value="" id="Mat4" class="materialInput">
+  Amount: <input type="text" name="Amount" value="" id="Amount4" class="materialInput numInput"> 
+  Cost: <input type="text" name="Cost" value="" id="Cost4" class="materialInput numInput">
+  Distance: <input type="text" name="Distance" value="" id="Dist4" class="materialInput numInput distanceInput">
+  </div>
+
+    <div class="MatInputRow" id="MatInputRow5" style="display: none;">
+    <div class="smallcontainer addcontainer" onclick="displayNextRow('MatInputRow6', 'addbutton5', 'addspan5', 'Mat5')" value='AddMat'>
+	<a class="button smallbutton addbutton" id="addbutton5"><span style="width: 35px; font-size: 18px">+</span><p class="addspan" id="addspan5">Add</p></p></a>
+	</div>
+  Material*: <input type="text" name="Material" value="" id="Mat5" class="materialInput">
+  Amount: <input type="text" name="Amount" value="" id="Amount5" class="materialInput numInput"> 
+  Cost: <input type="text" name="Cost" value="" id="Cost5" class="materialInput numInput">
+  Distance: <input type="text" name="Distance" value="" id="Dist5" class="materialInput numInput distanceInput">
+  </div>
+
+    
+</div>
+
+<div id="Location" class="tabcontent">
+  <h3 style="margin-top: 30px;">Enter additional information regarding your location here:</h3>
+  
+</div>
+
+<div id="Budget" class="tabcontent">
+  <h3 style="margin-top: 30px;">Enter your budget here:</h3>
+</div>
+
+<div id="AdditionalInfo" class="tabcontent">
+  <h3 style="margin-top: 30px;">Enter the number of workers available here:</h3>
+</div>
+
+</div>
+
+<div class="InputDisplay">
+	<h3>Previously Entered Info</h3>
+	<p id="placeholderText">You have not entered any information yet.</p>
+	<p id="PrevInfo"></p> 
+	<div class="smallcontainer clearcontainer" onclick='clearAll()' value='Clear All'>
+	<a class="button smallbutton clearbutton"><span>✓</span>Clear All</a>
+	</div>
+</div>
+</div>
+
+<div class="container">
+<a href="HTMLPage2.html" class="button"><span>✓</span>Recommend Materials</a>
+</div>
+
+<footer class="header-search footer-search">
+
+	<div class="header-limiter footer-limiter">
+
+<div class="container">
+		<a href="" class="button rightfooterbutton"><span>></span>About Us</a>
+</div>
+
+<div class="container">
+	<a href="" class="button leftfooterbutton"><span>></span>Download</a>
+</div>
+
+		<div class="select-style">
+		<select>
+		<option value="english">English</option>
+		<option value="nepali">Nepali</option>
+		</select>
+		</div>
+
+	</div>
+
+</footer>
+
+<script>
+
+function displayNextRow(RowName, ButtonName, SpanName, newInfo) {
+
+	document.getElementById('placeholderText').innerHTML = "";
+	currValue = document.getElementById('PrevInfo').innerHTML;
+	newValue = document.getElementById(newInfo).value
+	document.getElementById('PrevInfo').innerHTML = currValue + "<br />" + newValue;
+
+	document.getElementById(SpanName).innerHTML = "Edit";
+	document.getElementById(RowName).style.display = 'block';
+
+	
+}
+
+
+function clearAll() {
+	document.getElementById('placeholderText').innerHTML = "You have not entered any information yet";
+	document.getElementById('PrevInfo').innerHTML = "";
+
+	 document.getElementById('Mat1').value = "";
+	 document.getElementById('Mat2').value = "";
+	 document.getElementById('Mat3').value = "";
+	 document.getElementById('Mat4').value = "";
+	 document.getElementById('Mat5').value = "";
+
+	 document.getElementById('addspan1').innerHTML = "Add";
+	 document.getElementById('addspan2').innerHTML = "Add";
+	 document.getElementById('addspan3').innerHTML = "Add";
+	 document.getElementById('addspan4').innerHTML = "Add";
+	 document.getElementById('addspan5').innerHTML = "Add";
+}
+
+function openTab(tabName,elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+	    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    document.getElementById(tabName).style.display = "block";
+	elmnt.style.backgroundColor = '#55A2B0';
+	elmnt.style.color = 'black';
+
+
+}
+
+//Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+
+
+</body>
+</html>
