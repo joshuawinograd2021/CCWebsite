@@ -18,4 +18,23 @@
 }    
 .subtitle{
     font-size: 40px;
-}                                                                                                                                       
+} 
+.Mission{
+    text-align: center;
+    margin-top: 2%;
+}
+.mstatement{
+    margin: 5%;
+    font-size: large;
+    text-align: center;
+    margin-top: 2%;
+}
+@media max-height: 1000px {
+    .titletext {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+}                                                                                                                                    
