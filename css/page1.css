@@ -1,7 +1,4 @@
 .carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
-.mb-4{
-    font-size: 128px;
-}
 .nav-item{
     margin-top: 5%;
 }
@@ -15,4 +12,7 @@
 }
 .logoImg{
     width: 30%;
-}                                                                                                                                                   
+}
+.titletext{
+    font-size: 92px;
+}                                                                                                                                           
