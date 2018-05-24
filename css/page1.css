@@ -29,12 +29,13 @@
     text-align: center;
     margin-top: 2%;
 }
-@media max-height: 1000px {
+
+@media only screen and (max-width: 1000px) {
     .titletext {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .subtitle {
-        font-size: 40px;
+        font-size: 30px;
     }
 }                                                                                                                                    
