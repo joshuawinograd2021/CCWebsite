@@ -1646,6 +1646,18 @@ a.text-light:hover, a.text-light:focus {
   .overlay .mask:hover {
     opacity: 1; }
 
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .zoom img, .zoom video {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
